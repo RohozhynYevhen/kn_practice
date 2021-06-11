@@ -21,3 +21,5 @@
 Загрузка файлов на удаленный репозиторий
 
 ![image](https://user-images.githubusercontent.com/85611892/121658860-66a0d700-caaa-11eb-9960-a77aadb33517.png)
+
+7 задание
