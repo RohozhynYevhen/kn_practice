@@ -1,4 +1,4 @@
-# kn_practice
+# kn_practice_task0
 
 5 задание (1 вариант) находиться в файле task0_5.1.py
 
