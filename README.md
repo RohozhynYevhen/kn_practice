@@ -23,3 +23,14 @@
 ![image](https://user-images.githubusercontent.com/85611892/121658860-66a0d700-caaa-11eb-9960-a77aadb33517.png)
 
 7 задание
+
+Генерируем ssh ключи командой ssh-keygen
+Берем с папки пользователя публичный ключ и добавляем в настройках пользователя новый ssh ключ
+
+Сриншот выполнения команды git push (теперь она проходит без входа в аккаунт)
+
+![image](https://user-images.githubusercontent.com/85611892/121662487-13308800-caae-11eb-8276-7bfcc468ada3.png)
+
+Скриншот активированого ключа
+
+![image](https://user-images.githubusercontent.com/85611892/121662070-93a2b900-caad-11eb-8807-f53c6c816fe8.png)
