@@ -23,3 +23,7 @@
 Скриншот выполнения программы
 
 ![image](https://user-images.githubusercontent.com/85611892/122017740-e8567480-cdca-11eb-84e4-593e693aee38.png)
+
+Добавление файла task_1.py
+
+![image](https://user-images.githubusercontent.com/85611892/122019263-46378c00-cdcc-11eb-95e2-1af43d40b81b.png)
