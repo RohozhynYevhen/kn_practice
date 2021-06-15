@@ -20,3 +20,6 @@
 
 Код программы находиться в файле task_1.py
 
+Скриншот выполнения программы
+
+![image](https://user-images.githubusercontent.com/85611892/122017740-e8567480-cdca-11eb-84e4-593e693aee38.png)
