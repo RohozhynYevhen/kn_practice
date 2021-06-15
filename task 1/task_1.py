@@ -2,16 +2,16 @@ import re
 
 string = input("Введите строку: ")
 
-#Отделяем цифры от букв
+# Отделяем цифры от букв
 nums = re.findall(r'\d+', string)
 string = re.sub(r"\d+", "", string, flags=re.UNICODE)
-#Массив строк преобразовываем в числа
+# Массив строк преобразовываем в числа
 nums = [int(i) for i in nums]
 
 print("Строка без чисел:\n", string, sep='')
 print("Массив чисел из строки:\n", nums, sep='')
 
-#Функция меняющая в словах первую и последнюю букву на заглавные 
+# Функция меняющая в словах первую и последнюю букву на заглавные 
 def cap(string):
      string, result = string.title(), ""
      for word in string.split():
@@ -24,7 +24,7 @@ max_num = max(nums)
 index_of_nums = nums.index(max_num)
 print("\nМаксимальное значение в массиве:", max_num)
 vals = []
-#Формируем массив из чисел поднесенных в степень
+# Формируем массив из чисел поднесенных в степень
 for i in range(len(nums)):
     if i != index_of_nums:
         temp = nums[i] ** i
