@@ -32,7 +32,7 @@ def calculate():
     value = calc.get()
     if value[-1] in '+-/*^%':
         value = value + value[:-1]
-    value.replace('ln', 'log1p')
+    value = value.replace('^', '**')
     calc.delete(0, tk.END)
     try:
         calc.insert(0, eval(value))
