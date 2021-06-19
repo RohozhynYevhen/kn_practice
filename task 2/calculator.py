@@ -62,17 +62,26 @@ def clear():
 def binary():
     calc['state'] = tk.NORMAL
     value = calc.get()
+    if value == 'error':
+        value = 'error'
+    else:
+        if value.find('.') == -1:
+            value = bin(int(value))
+            value = value[2:]
+        else:
+            value = 'error'
     calc.delete(0, tk.END)
-    value = bin(int(value))
-    value = value[2:]
     calc.insert(0, value)
     calc['state'] = tk.DISABLED
 
 def dec():
     calc['state'] = tk.NORMAL
     value = calc.get()
+    if value == 'error':
+        value = 'error'
+    else:
+        value = str(int(value, 2))
     calc.delete(0, tk.END)
-    value = str(int(value, 2))
     calc.insert(0, value)
     calc['state'] = tk.DISABLED
     
@@ -87,6 +96,8 @@ calc.insert(0, '0')
 calc['state'] = tk.DISABLED
 calc.config(background="white", disabledbackground="white")
 calc.grid(row = 0, column = 0, columnspan=7, stick='we', padx = 2)
+
+#add buttons
 
 tk.Button(text='Bin', bd = 1, font=('Arial', 13), command = binary).grid(row=1, column=0, stick='we', padx = 2, pady = 2)
 tk.Button(text='Dec', bd = 1, font=('Arial', 13), command = dec).grid(row=1, column=1, stick='we', padx = 2, pady = 2)
@@ -110,7 +121,6 @@ tk.Button(text='=', bd = 1, font=('Arial', 13), command=lambda : calculate()).gr
 tk.Button(text='.', bd = 1, font=('Arial', 13), command=lambda : add_digit('.')).grid(row=5, column=1, stick='wens', padx = 2, pady = 2)
 tk.Button(text='(', bd = 1, font=('Arial', 13), command=lambda : add_digit('(')).grid(row=3, column=5, stick='wens', padx = 2, pady = 2)
 tk.Button(text=')', bd = 1, font=('Arial', 13), command=lambda : add_digit(')')).grid(row=4, column=5, stick='wens', padx = 2, pady = 2)
-
 tk.Button(text='cos', bd = 1, font=('Arial', 13), command=lambda : add_digit('cos(')).grid(row=2, column=3, stick='wens', padx = 2, pady = 2)
 tk.Button(text='sin', bd = 1, font=('Arial', 13), command=lambda : add_digit('sin(')).grid(row=2, column=4, stick='wens', padx = 2, pady = 2)
 tk.Button(text='tan', bd = 1, font=('Arial', 13), command=lambda : add_digit('tan(')).grid(row=2, column=5, stick='wens', padx = 2, pady = 2)
