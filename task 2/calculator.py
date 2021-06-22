@@ -88,7 +88,10 @@ def dec():
     if value == 'error':
         value = 'error'
     else:
-        value = str(int(value, 2))
+        try:
+            value = str(int(value, 2))
+        except ValueError:
+            value = str(value)
     calc.delete(0, tk.END)
     calc.insert(0, value)
     calc['state'] = tk.DISABLED
