@@ -4,9 +4,11 @@
 
 Но с ограничением в пять стран Европы 
 
-![image](https://user-images.githubusercontent.com/85611892/122978084-c64a8c80-d39e-11eb-90b7-073ccefe1208.png)
+![image](https://user-images.githubusercontent.com/85611892/123163399-5b6e8380-d47a-11eb-860c-b5e9821c020d.png)
 
-![image](https://user-images.githubusercontent.com/85611892/122978124-d1052180-d39e-11eb-95f8-f0c991131957.png)
+Так же доступен поиск по странам Европы
+
+![image](https://user-images.githubusercontent.com/85611892/123163457-67f2dc00-d47a-11eb-93c8-47e688032d8c.png)
 
 Сайт с которого отслеживается информация https://vaccovid.live/
 
